@@ -1,0 +1,208 @@
+* {
+	margin:0px;
+	padding: 0px;
+}
+
+body {
+    background-color: #5DAEE3;
+    font-family: OpenSansRegular, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 17px;
+    margin: 11px 0; 
+}
+
+p {
+    font-size: 13px;
+    text-align: center;
+    color: #A4A4A4;
+    margin: 14px 0px;
+}
+
+button {
+    background: #65B3E8;
+    border-radius: 20px;
+    border: 0px;
+    padding: 4px 14px;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    transition: 1s;
+        outline: none;
+}
+
+#wrapper {
+	width: 1028px;
+    margin:0 auto;
+}
+
+
+.info {
+    margin-top: 15px;
+    height: 406px;
+    background: #4A98CD;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#block {
+    overflow: hidden;
+}
+
+.box {
+    width: 20%;
+    height: 344px;
+    background: #72C0EE;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 26px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.box+.box {
+    border-left: 1px solid #5BACE2;
+}
+
+.box::after {
+    content: "";
+    top: 14px;
+    left: -36px;
+    position: absolute;
+    border-radius: 134px 134px 8px 8px;
+    width: 270px;
+    height: 329px;
+    background: linear-gradient(to bottom, #DFF0FA, #fff);
+}
+
+.box::before {
+    content: "";
+    top: 9px;
+    left: -36px;
+    position: absolute;
+    background: #5BACE2;
+    border-radius: 49% 49% 8px 8px;
+    width: 270px;
+    height: 329px;
+}
+
+.box h2, .box p, .box .img, .box button {
+    position: relative;
+    z-index: 1;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px #333;
+    margin: 18px auto 5px auto;
+}
+
+#box1 .icon {
+    background: url(../sprite.png) no-repeat -18px -3px #fff;
+}
+
+#box2 .icon {
+    background: url(../sprite.png) no-repeat -139px -9px #fff;
+}
+
+#box3 .icon {
+    background: url(../sprite.png) no-repeat -273px -4px #fff;
+}
+
+#box4 .icon {
+    background: url(../sprite.png) no-repeat -405px -8px #fff;
+}
+
+#box5 .icon {
+    background: url(../sprite.png) no-repeat -529px -7px #fff;
+}
+
+#box1 h2 {
+    color: #71B630;
+}
+
+#box2 h2 {
+    color: #F5950B;
+}
+
+#box3 h2 {
+    color: #27A0DF;
+}
+
+#box4 h2 {
+    color: #949494;
+}
+
+#box5 h2 {
+    color: #CE170B;
+}
+
+
+span {
+    float: left;
+    text-transform: uppercase;
+    margin: 0px 17px 0px 34px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#login {
+    color: #fff;
+    font-weight: 700;
+}
+
+form {
+    padding-top: 18px;
+    float:left;
+}
+
+input {
+    padding: 4px;
+    border-bottom: 1px solid #8a8a8a;
+}
+
+input[type="submit"] {
+    background: #FBA304;
+    color: #fff;
+    border-radius: 20px;
+    border: 0;
+    padding: 5px 17px;
+    margin-left: 4px;
+    box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.48);
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    transition: 1s;
+    background: #ea6c25;
+}
+
+label {
+    font-size: 14px;
+    color: #9ED4F9;
+    padding: 0 6px 0 13px;
+}
+
+a {
+    color: #fff;
+    font-size: 13px;
+    padding: 2px;
+    top: 5px;
+    left: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+button:hover {
+    background: #4080ac;
+    transition: 1s;
+    transform: rotate(360deg);
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+}
